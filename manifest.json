@@ -1,6 +1,6 @@
 {
-  "short_name": "En Dictionary",
-  "name": "English Dictionary",
+  "short_name": "en_dictionary",
+  "name": "En Dictionary",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,7 +19,7 @@
     }
   ],
   "start_url": ".",
-  "display": "fullscreen",
+  "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff"
 }
