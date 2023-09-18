@@ -25,12 +25,6 @@ function App(props) {
     const [error, setError] = useState(false);
     const [data, setData] = useState(null);
 
-    const [message, setMessage] = useState(null);
-
-    const handleChange = (event) => {
-        setWord(event.target.value);
-    };
-
     const theUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
 
     function handleSubmit(event) {
@@ -67,9 +61,7 @@ function App(props) {
         //sent server word 
         setLoading(true);
         setError(false);
-        axios.get(theUrl, {
-            params: ''
-        })
+        axios.get(theUrl)
             .then(function (response) {
                 setData(response.data);
                 setLoading(false);
@@ -77,7 +69,6 @@ function App(props) {
                 addDataIntoCache('dictionary', theUrl, response.data)
             })
             .catch(function (error) {
-                // console.log(error);
                 setLoading(false);
                 setError(error)
             })
@@ -88,7 +79,7 @@ function App(props) {
                 <Paper
                     elevation={4}
                     component="form"
-                    sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', background: 'rgba(100%,100%,100%,0.5)', backdropFilter: "blur(8px)" }}
+                    sx={{ borderRadius: "1rem", p: '2px 4px', display: 'flex', alignItems: 'center', background: 'rgba(100%,100%,100%,0.5)', backdropFilter: "blur(8px)" }}
                     onSubmit={handleSubmit}
                 >
                     <InputBase
@@ -97,7 +88,7 @@ function App(props) {
                         inputProps={{ 'aria-label': 'search Words' }}
                         value={word}
                         required
-                        onChange={handleChange}
+                        onChange={e => setWord(e.target.value)}
                     />
                     <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
                         <SearchIcon />
@@ -123,7 +114,7 @@ function App(props) {
                 }
 
             </Box>
-        </div>
+        </div >
     );
 }
 

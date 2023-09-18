@@ -3,17 +3,15 @@ import ReactDOM from 'react-dom/client';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 import 'material-icons/iconfont/material-icons.css';
+import './app.css';
 import Dictionary from './dictionary';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // window.location.reload(false)
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Dictionary/>
-    {/* <MyRouter /> */}
-    {/* <Cache/> */}
-    {/* <Tast/> */}
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 
