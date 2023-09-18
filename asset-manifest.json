@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/en_dictionary/static/css/main.8bcd0221.css",
-    "main.js": "/en_dictionary/static/js/main.cccbb584.js",
+    "main.css": "/en_dictionary/static/css/main.3c505322.css",
+    "main.js": "/en_dictionary/static/js/main.729a5567.js",
     "static/js/787.63d9c297.chunk.js": "/en_dictionary/static/js/787.63d9c297.chunk.js",
     "static/media/material-icons-two-tone.woff": "/en_dictionary/static/media/material-icons-two-tone.668eb8a74d6d5bdf2047.woff",
     "static/media/material-icons-two-tone.woff2": "/en_dictionary/static/media/material-icons-two-tone.90873ae9b9f6fbc69478.woff2",
@@ -15,12 +15,12 @@
     "static/media/material-icons.woff2": "/en_dictionary/static/media/material-icons.875e558dcab064d09044.woff2",
     "service-worker.js": "/en_dictionary/service-worker.js",
     "index.html": "/en_dictionary/index.html",
-    "main.8bcd0221.css.map": "/en_dictionary/static/css/main.8bcd0221.css.map",
-    "main.cccbb584.js.map": "/en_dictionary/static/js/main.cccbb584.js.map",
+    "main.3c505322.css.map": "/en_dictionary/static/css/main.3c505322.css.map",
+    "main.729a5567.js.map": "/en_dictionary/static/js/main.729a5567.js.map",
     "787.63d9c297.chunk.js.map": "/en_dictionary/static/js/787.63d9c297.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bcd0221.css",
-    "static/js/main.cccbb584.js"
+    "static/css/main.3c505322.css",
+    "static/js/main.729a5567.js"
   ]
 }
